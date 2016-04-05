@@ -1,5 +1,6 @@
 # sparkiy.WindowsStore.Analytics.Client
 
+[![nuget][nuget-badge]][nuget-url]
 [![Build status](https://ci.appveyor.com/api/projects/status/6s85kfxda5uyb0td/branch/master?svg=true)](https://ci.appveyor.com/project/AleksandarDev/sparkiy-windowsstore-analytics-client/branch/master)
 
 Sparkiy Windows Store Analytics API client.
@@ -30,3 +31,6 @@ using (var client = new AnalyticsClient())
 #### Get your Client Id and Client Secret
 
 Take a look at this article for more details: [Windows Store analytics API now available](https://blogs.windows.com/buildingapps/2016/03/01/windows-store-analytics-api-now-available/)
+
+[nuget-badge]: https://img.shields.io/badge/nuget-v1.0.0-blue.svg
+[nuget-url]: https://www.nuget.org/packages/Sparkiy.WindowsStore.Analytics.Client/
