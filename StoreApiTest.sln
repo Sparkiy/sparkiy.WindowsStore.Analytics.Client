@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApiTest", "StoreApiTest\StoreApiTest.csproj", "{0C266196-FA15-494B-AF9D-C6A9187066FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sparkiy.WindowsStore.Analytics.Client", "Sparkiy.WindowsStore.Analytics.Client\Sparkiy.WindowsStore.Analytics.Client.csproj", "{540A934B-6863-4054-B6CD-BDDC28933DCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{F9166498-463D-400D-B6E9-F8301C7957C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C266196-FA15-494B-AF9D-C6A9187066FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C266196-FA15-494B-AF9D-C6A9187066FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C266196-FA15-494B-AF9D-C6A9187066FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C266196-FA15-494B-AF9D-C6A9187066FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540A934B-6863-4054-B6CD-BDDC28933DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540A934B-6863-4054-B6CD-BDDC28933DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540A934B-6863-4054-B6CD-BDDC28933DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540A934B-6863-4054-B6CD-BDDC28933DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C266196-FA15-494B-AF9D-C6A9187066FF} = {F9166498-463D-400D-B6E9-F8301C7957C2}
+	EndGlobalSection
+EndGlobal
