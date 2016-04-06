@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C266196-FA15-494B-AF9D-C6A9187066FF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{540A934B-6863-4054-B6CD-BDDC28933DCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StoreApiTest</RootNamespace>
-    <AssemblyName>StoreApiTest</AssemblyName>
+    <RootNamespace>Sparkiy.WindowsStore.Analytics.Client</RootNamespace>
+    <AssemblyName>Sparkiy.WindowsStore.Analytics.Client</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,15 +21,16 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sparkiy.WindowsStore.Analytics.Client.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Sparkiy.WindowsStore.Analytics.Client.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,18 +48,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AnalyticsClient.cs" />
+    <Compile Include="AnalyticsClientException.cs" />
+    <Compile Include="AnalyticsClientInvalidClientDataException.cs" />
+    <Compile Include="AnalyticsClientInvalidRequestDataException.cs" />
+    <Compile Include="AnalyticsClientUnauthorizedException.cs" />
+    <Compile Include="Models\v10\AnalyticsClientExtensions.cs" />
+    <Compile Include="Models\v10\AppAcquisition.cs" />
+    <Compile Include="Models\v10\AppAnalyticsItem.cs" />
+    <Compile Include="Models\v10\AppAnalyticsItemAcquisition.cs" />
+    <Compile Include="Models\v10\AppFailureHit.cs" />
+    <Compile Include="Models\v10\AppIapAcquisition.cs" />
+    <Compile Include="Models\v10\AppRating.cs" />
+    <Compile Include="Models\v10\AppReview.cs" />
+    <Compile Include="AzureADTokenResponse.cs" />
+    <Compile Include="Models\v10\CallResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\v10\SupportedCalls.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Sparkiy.WindowsStore.Analytics.Client.nuspec" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sparkiy.WindowsStore.Analytics.Client\Sparkiy.WindowsStore.Analytics.Client.csproj">
-      <Project>{4fbf4841-6159-4f4f-a83e-c7f642978420}</Project>
-      <Name>Sparkiy.WindowsStore.Analytics.Client</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

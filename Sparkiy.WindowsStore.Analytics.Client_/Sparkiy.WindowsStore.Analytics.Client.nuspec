@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>Aleksandar Toplek</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Sparkiy/sparkiy.WindowsStore.Analytics.Client/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Sparkiy/sparkiy.WindowsStore.Analytics.Client</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright (c) Sparkiy, 2016</copyright>
+    <tags>sparkiy windowsstore analytics api client uwp</tags>
+  </metadata>
+</package>
