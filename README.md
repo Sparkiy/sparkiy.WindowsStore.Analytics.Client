@@ -32,5 +32,5 @@ using (var client = new AnalyticsClient())
 
 Take a look at this article for more details: [Windows Store analytics API now available](https://blogs.windows.com/buildingapps/2016/03/01/windows-store-analytics-api-now-available/)
 
-[nuget-badge]: https://img.shields.io/badge/nuget-v1.0.0-blue.svg
+[nuget-badge]: https://img.shields.io/badge/nuget-v1.1.0-blue.svg
 [nuget-url]: https://www.nuget.org/packages/Sparkiy.WindowsStore.Analytics.Client/
